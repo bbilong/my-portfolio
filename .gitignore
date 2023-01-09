@@ -8,12 +8,19 @@
 # testing
 /coverage
 
+# idea
+/.idea
+
 # next.js
 /.next/
 /out/
 
 # production
 /build
+
+# sanity
+/sanity/node_modules
+/sanity/.sanity
 
 # misc
 .DS_Store
