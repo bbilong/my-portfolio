@@ -8,6 +8,20 @@
     }
   },
 
+  "overrides": [
+    {
+      "files": [
+        "**/*.spec.js",
+        "**/*.spec.jsx",
+        "**/*.test.ts",
+        "**/*.test.tsx"
+      ],
+      "env": {
+        "jest": true
+      }
+    }
+  ],
+
   "env": {
     "browser": true,
     "node": true,
@@ -43,6 +57,7 @@
     "@typescript-eslint/no-explicit-any": "off",
     "no-underscore-dangle": "off",
     "no-console": "error",
+    "no-use-before-define": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "error",
     "react/react-in-jsx-scope": "off",
