@@ -1,6 +1,7 @@
 import type { GetStaticProps } from "next";
 import Head from 'next/head';
 import Link from "next/link";
+import { urlFor } from "@lib/sanity.client";
 import Hero from "../components/Hero/Hero";
 import About from "../components/About/About";
 import Skills from "../components/Skills/Skills";
@@ -10,7 +11,6 @@ import ContactMe from "../components/ContactMe/ContactMe";
 import WorkExperience from "../components/WorkExperience/WorkExperience";
 import { Experience, PageInfo, Project, Skill, Social } from "../typings";
 import { fetchExperiences, fetchPageInfo, fetchProjects, fetchSkills, fetchSocials } from "../utils";
-import { urlFor } from "../sanity.client";
 
 type Props = {
   skills: Skill[];

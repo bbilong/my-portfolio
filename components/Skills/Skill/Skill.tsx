@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
+import { urlFor } from "@lib/sanity.client";
 import { Skill } from "../../../typings";
-import { urlFor } from "../../../sanity.client";
 
 type Props = {
   skill: Skill,

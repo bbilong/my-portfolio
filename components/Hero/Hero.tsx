@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
+import { urlFor } from "@lib/sanity.client";
 import BackgroundCircles from "../BackgroundCircles/BackgroundCircles";
 import { PageInfo } from "../../typings";
-import { urlFor } from "../../sanity.client";
 
 type Props = {
   pageInfo: PageInfo,

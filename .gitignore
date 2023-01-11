@@ -19,8 +19,8 @@
 /build
 
 # sanity
-/sanity/node_modules
-/sanity/.sanity
+/studio/node_modules
+/studio/.sanity
 
 # misc
 .DS_Store
