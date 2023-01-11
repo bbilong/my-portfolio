@@ -10,7 +10,7 @@ interface Image {
   asset: {
     _ref: string;
     _type: string;
-  }
+  };
 }
 
 export interface Social extends SanityBody {

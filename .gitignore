@@ -21,6 +21,7 @@
 # sanity
 /studio/node_modules
 /studio/.sanity
+/studio/dist
 
 # misc
 .DS_Store

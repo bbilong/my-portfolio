@@ -1,22 +1,22 @@
-import { useForm, SubmitHandler } from "react-hook-form";
-import { EnvelopeIcon, MapPinIcon, PhoneIcon } from "@heroicons/react/24/solid";
-import {PageInfo} from "../../typings";
+import { useForm, SubmitHandler } from 'react-hook-form';
+import { EnvelopeIcon, MapPinIcon, PhoneIcon } from '@heroicons/react/24/solid';
+import { PageInfo } from '../../typings';
 
 type Props = {
-  pageInfo: PageInfo,
+  pageInfo: PageInfo;
 };
 
 type Inputs = {
-  name: string,
-  email: string,
-  subject: string,
-  message: string,
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
 };
 
 const ContactMe = ({ pageInfo }: Props) => {
   const { register, handleSubmit } = useForm<Inputs>();
   const { address, email, phoneNumber } = pageInfo;
-  const onSubmit: SubmitHandler<Inputs> = (formData) => {
+  const onSubmit: SubmitHandler<Inputs> = formData => {
     window.location.href = `mailto:beauclairbilong@gmail.com?subject${formData.subject}
     &body=Hi, my name is ${formData.name}. ${formData.message} ${formData.email}`;
   };
@@ -32,7 +32,7 @@ const ContactMe = ({ pageInfo }: Props) => {
 
       <div className="flex flex-col space-y-10">
         <h4 className="text-4xl font-semibold text-center">
-          I have got just what you need.{" "}
+          I have got just what you need.{' '}
           <span className="decoration-[#F7AB0A]/50 underline">Lets Talk.</span>
         </h4>
 
@@ -94,6 +94,6 @@ const ContactMe = ({ pageInfo }: Props) => {
       </div>
     </div>
   );
-}
+};
 
 export default ContactMe;

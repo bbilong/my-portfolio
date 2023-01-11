@@ -2,6 +2,8 @@
   "name": "my-portfolio-build",
   "private": true,
   "version": "1.0.0",
+  "author": "Beauclair BILONG",
+  "description": "Beauclair BILONG's Portfolio Admin",
   "main": "package.json",
   "license": "UNLICENSED",
   "scripts": {
@@ -29,9 +31,9 @@
     "typescript": "^4.0.0"
   },
   "prettier": {
-    "semi": false,
-    "printWidth": 100,
-    "bracketSpacing": false,
-    "singleQuote": true
+    "printWidth": 80,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "arrowParens": "avoid"
   }
 }

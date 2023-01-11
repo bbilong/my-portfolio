@@ -1,0 +1,7 @@
+.next
+.vercel
+node_modules
+
+studio/.sanity
+studio/dist
+studio/node_modules

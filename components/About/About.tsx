@@ -1,17 +1,19 @@
 import { motion } from 'framer-motion';
-import { urlFor } from "@lib/sanity.client";
-import { PageInfo } from "../../typings";
+import { urlFor } from '@lib/sanity.client';
+import { PageInfo } from '../../typings';
 
 type Props = {
-  pageInfo: PageInfo,
+  pageInfo: PageInfo;
 };
 
 const About = ({ pageInfo }: Props) => {
   const { backgroundInformation, profilePic } = pageInfo;
 
   return (
-    <div className="flex flex-col relative h-screen text-center
-    md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
+    <div
+      className="flex flex-col relative h-screen text-center
+    md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
+    >
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         About
       </h3>
@@ -29,14 +31,14 @@ const About = ({ pageInfo }: Props) => {
 
       <div className="space-y-10 px-0 md:px-10">
         <h4 className="text-4xl font-semibold">
-          Here is a{" "}
-          <span className="underline decoration-[#F7AB0A]/50">little</span>{" "}
+          Here is a{' '}
+          <span className="underline decoration-[#F7AB0A]/50">little</span>{' '}
           background
         </h4>
         <p className="text-sm">{backgroundInformation}</p>
       </div>
     </div>
   );
-}
+};
 
 export default About;

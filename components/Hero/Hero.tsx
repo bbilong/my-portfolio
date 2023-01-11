@@ -1,11 +1,11 @@
-import Link from "next/link";
+import Link from 'next/link';
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
-import { urlFor } from "@lib/sanity.client";
-import BackgroundCircles from "../BackgroundCircles/BackgroundCircles";
-import { PageInfo } from "../../typings";
+import { urlFor } from '@lib/sanity.client';
+import BackgroundCircles from '../BackgroundCircles/BackgroundCircles';
+import { PageInfo } from '../../typings';
 
 type Props = {
-  pageInfo: PageInfo,
+  pageInfo: PageInfo;
 };
 
 const Hero = ({ pageInfo }: Props) => {
@@ -14,8 +14,8 @@ const Hero = ({ pageInfo }: Props) => {
   const [text, helper] = useTypewriter({
     words: [
       `Hi, I'm ${name}`,
-      "Guy-who-loves-Learn.tsx",
-      "<ButLovesToCodeMore />"
+      'Guy-who-loves-Learn.tsx',
+      '<ButLovesToCodeMore />',
     ],
     loop: true,
     delaySpeed: 2000,
@@ -37,7 +37,7 @@ const Hero = ({ pageInfo }: Props) => {
         </h2>
         <h1 className="text-5xl lg:text-6xl font-semibold px-10">
           <span className="mr-3">{text}</span>
-          <Cursor cursorColor='#F7AB0A' />
+          <Cursor cursorColor="#F7AB0A" />
         </h1>
         <div className="pt-5">
           <Link href="#about">

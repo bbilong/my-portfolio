@@ -1,6 +1,6 @@
-import type { AppProps } from 'next/app'
-import { Analytics} from "@vercel/analytics/react";
-import '../styles/globals.css'
+import type { AppProps } from 'next/app';
+import { Analytics } from '@vercel/analytics/react';
+import '../styles/globals.css';
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
@@ -9,6 +9,6 @@ const App = ({ Component, pageProps }: AppProps) => {
       <Analytics />
     </>
   );
-}
+};
 
 export default App;

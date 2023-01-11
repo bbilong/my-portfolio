@@ -1,4 +1,4 @@
-import { defineField, defineType } from 'sanity'
+import { defineField, defineType } from 'sanity';
 
 export default defineType({
   name: 'social',
@@ -17,4 +17,4 @@ export default defineType({
       type: 'url',
     }),
   ],
-})
+});
