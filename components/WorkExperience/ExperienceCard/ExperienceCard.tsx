@@ -1,3 +1,4 @@
+import uuid from 'react-uuid';
 import { motion } from 'framer-motion';
 import { urlFor } from '@lib/sanity.client';
 import { Experience } from '../../../typings';
@@ -58,8 +59,8 @@ const ExperienceCard = ({ experience }: Props) => {
           className="list-disc space-y-4 text-lg max-h-96 p-5 overflow-y-scroll
         scrollbar scrollbar-thin scrollbar-thumb-[#F7AB0A]/80 scrollbar-track-black"
         >
-          {points.map((point, index) => (
-            <li key={index}>{point}</li>
+          {points.map(point => (
+            <li key={uuid()}>{point}</li>
           ))}
         </ul>
       </div>

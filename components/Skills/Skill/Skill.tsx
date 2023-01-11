@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
 import { urlFor } from '@lib/sanity.client';
-import { Skill } from '../../../typings';
+import { Skill as SkillType } from '../../../typings';
 
 type Props = {
-  skill: Skill;
-  directionLeft?: boolean;
+  skill: SkillType;
+  directionLeft: boolean;
 };
 
 const Skill = ({ skill, directionLeft }: Props) => {

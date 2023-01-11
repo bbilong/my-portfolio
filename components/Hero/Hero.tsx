@@ -11,7 +11,7 @@ type Props = {
 const Hero = ({ pageInfo }: Props) => {
   const { heroImage, name, role } = pageInfo;
 
-  const [text, helper] = useTypewriter({
+  const [text] = useTypewriter({
     words: [
       `Hi, I'm ${name}`,
       'Guy-who-loves-Learn.tsx',
@@ -20,8 +20,6 @@ const Hero = ({ pageInfo }: Props) => {
     loop: true,
     delaySpeed: 2000,
   });
-
-  const { isType, isDelete, isDelay, isDone } = helper;
 
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
@@ -41,16 +39,24 @@ const Hero = ({ pageInfo }: Props) => {
         </h1>
         <div className="pt-5">
           <Link href="#about">
-            <button className="heroButton">About</button>
+            <button type="button" className="heroButton">
+              About
+            </button>
           </Link>
           <Link href="#experience">
-            <button className="heroButton">Experience</button>
+            <button type="button" className="heroButton">
+              Experience
+            </button>
           </Link>
           <Link href="#skills">
-            <button className="heroButton">Skills</button>
+            <button type="button" className="heroButton">
+              Skills
+            </button>
           </Link>
           <Link href="#projects">
-            <button className="heroButton">Projects</button>
+            <button type="button" className="heroButton">
+              Projects
+            </button>
           </Link>
         </div>
       </div>
