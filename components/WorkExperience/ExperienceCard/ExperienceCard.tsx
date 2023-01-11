@@ -11,8 +11,8 @@ const ExperienceCard = ({ experience }: Props) => {
     points,
     company,
     jobTitle,
-    dateEnded,
-    dateStarted,
+    endDate,
+    startDate,
     technologies,
     companyImage,
     isCurrentlyWorkingHere
@@ -46,8 +46,8 @@ const ExperienceCard = ({ experience }: Props) => {
           ))}
         </div>
         <p className="uppercase py-5 text-gray-300">
-          {new Date(dateStarted).toLocaleDateString()} -{" "}
-          {isCurrentlyWorkingHere ? 'Present' : new Date(dateEnded).toLocaleDateString()}
+          {new Date(startDate).toLocaleDateString()} -{" "}
+          {isCurrentlyWorkingHere ? 'Present' : new Date(endDate).toLocaleDateString()}
         </p>
 
         <ul className="list-disc space-y-4 text-lg max-h-96 p-5 overflow-y-scroll

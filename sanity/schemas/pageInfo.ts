@@ -34,10 +34,7 @@ export default defineType({
     defineField({
       name: 'backgroundInformation',
       title: 'Background Information',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
+      type: 'text',
     }),
     defineField({
       name: 'phoneNumber',
