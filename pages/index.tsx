@@ -73,7 +73,7 @@ const Home = ({ skills, socials, pageInfo, projects, experiences }: Props) => {
         <footer className="sticky bottom-5 w-full cursor-pointer">
           <div className="flex items-center justify-center">
             <img
-              className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
+              className="h-6 w-6 md:h-10 md:w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
               src={urlFor(pageInfo?.heroImage).url()}
               alt={pageInfo?.name}
             />
