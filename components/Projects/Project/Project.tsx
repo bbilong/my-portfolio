@@ -26,7 +26,7 @@ const Project = ({ index, project, projectLength }: Props) => {
       />
 
       <div className="space-y-10 px-0 md:px-10 max-w-6xl">
-        <h4 className="text-4xl font-semibold text-center">
+        <h4 className="text-xl md:text-4xl font-semibold text-center">
           <span className="underline decoration-[#F7AB0A]/50">
             Case Study {index + 1} of {projectLength} :
           </span>{' '}
@@ -37,14 +37,14 @@ const Project = ({ index, project, projectLength }: Props) => {
           {technologies.map(technology => (
             <img
               key={technology?._id}
-              className="h-10 w-10 rounded-full"
+              className="h-5 w-5 md:h-10 md:w-10 rounded-full"
               src={urlFor(technology?.image).url()}
               alt={technology?.title}
             />
           ))}
         </div>
 
-        <p className="text-lg text-center md:text-left">{summary}</p>
+        <p className="text-sm md:text-lg text-center md:text-left">{summary}</p>
       </div>
     </motion.div>
   );

@@ -12,11 +12,11 @@ const BackgroundCircles = () => {
       transition={{ duration: 2.5 }}
       className="relative flex justify-center items-center"
     >
-      <div className="rounded-full border border-[#333333] h-[200px] w-[200px] mt-52 absolute animate-ping" />
-      <div className="rounded-full border border-[#333333] h-[300px] w-[300px] mt-52 absolute" />
-      <div className="rounded-full border border-[#333333] h-[500px] w-[500px] mt-52 absolute" />
-      <div className="rounded-full border border-[#F7AB0A] h-[650px] w-[650px] mt-52 absolute animate-pulse opacity-20" />
-      <div className="rounded-full border border-[#333333] h-[800px] w-[800px] mt-52 absolute" />
+      <div className="rounded-full border border-[#333333] h-[100px] w-[100px]  md:h-[200px] md:w-[200px] mt-52 absolute animate-ping" />
+      <div className="rounded-full border border-[#333333] h-[200px] w-[200px]  md:h-[300px] md:w-[300px] mt-52 absolute" />
+      <div className="rounded-full border border-[#333333] h-[250px] w-[250px]  md:h-[500px] md:w-[500px] mt-52 absolute" />
+      <div className="rounded-full border border-[#F7AB0A] h-[300px] w-[300px]  md:h-[650px] md:w-[650px] mt-52 absolute animate-pulse opacity-20" />
+      <div className="rounded-full border border-[#333333] h-[350px] w-[350px]  md:h-[800px] md:w-[800px] mt-52 absolute" />
     </motion.div>
   );
 };

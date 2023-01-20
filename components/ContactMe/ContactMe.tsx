@@ -15,7 +15,7 @@ type Inputs = {
 
 const ContactMe = ({ pageInfo }: Props) => {
   const { register, handleSubmit } = useForm<Inputs>();
-  const { address, email, phoneNumber } = pageInfo;
+  const { address, email, name, phoneNumber } = pageInfo;
   const onSubmit: SubmitHandler<Inputs> = formData => {
     window.location.href = `mailto:beauclairbilong@gmail.com?subject${formData.subject}
     &body=Hi, my name is ${formData.name}. ${formData.message} ${formData.email}`;
@@ -26,30 +26,30 @@ const ContactMe = ({ pageInfo }: Props) => {
       className="h-screen flex flex-col relative text-center md:text-left md:flex-row
       max-w-7xl px-10 justify-evenly mx-auto items-center"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-xl md:text-2xl">
         Contact
       </h3>
 
       <div className="flex flex-col space-y-10">
-        <h4 className="text-4xl font-semibold text-center">
+        <h4 className="text-2xl md:text-4xl font-semibold text-center">
           I have got just what you need.{' '}
           <span className="decoration-[#F7AB0A]/50 underline">Lets Talk.</span>
         </h4>
 
         <div className="space-y-10">
           <div className="flex items-center space-x-5 justify-center">
-            <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">{phoneNumber}</p>
+            <PhoneIcon className="text-[#F7AB0A] h-4 w-4 md:h-7 md:w-7 animate-pulse" />
+            <p className="text-sm md:text-2xl">{phoneNumber}</p>
           </div>
 
           <div className="flex items-center space-x-5 justify-center">
-            <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">{email}</p>
+            <EnvelopeIcon className="text-[#F7AB0A] h-4 w-4 md:h-7 md:w-7 animate-pulse" />
+            <p className="text-sm md:text-2xl">{email}</p>
           </div>
 
           <div className="flex items-center space-x-5 justify-center">
-            <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">{address}</p>
+            <MapPinIcon className="text-[#F7AB0A] h-4 w-4 md:h-7 md:w-7 animate-pulse" />
+            <p className="text-sm md:text-2xl">{address}</p>
           </div>
 
           <form
@@ -91,6 +91,9 @@ const ContactMe = ({ pageInfo }: Props) => {
             </button>
           </form>
         </div>
+        <p className="text-xs text-center text-gray-500 uppercase">
+          © {new Date().getFullYear()} {name}
+        </p>
       </div>
     </div>
   );

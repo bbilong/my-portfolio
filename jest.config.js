@@ -7,6 +7,12 @@ module.exports = {
     '!**/*.d.ts',
     '!**/node_modules/**',
     '!**/studio/**',
+    '!**/.next/**',
+    '!**/.vercel/**',
+    '!**/lib/**',
+    '!**/e2e/**',
+    '!**/tests-examples/**',
+    '!**/coverage/**',
   ],
   moduleNameMapper: {
     /* Handle CSS imports (with CSS modules)
@@ -24,6 +30,7 @@ module.exports = {
   testPathIgnorePatterns: [
     '<rootDir>/e2e/',
     '<rootDir>/tests-examples/',
+    '<rootDir>/coverage/',
     '<rootDir>/node_modules/',
     '<rootDir>/.next/',
     '<rootDir>/.vercel/',
@@ -33,10 +40,10 @@ module.exports = {
   ],
   coverageThreshold: {
     global: {
-      statements: 0,
+      statements: 2.04,
       branches: 0,
-      functions: 0.01,
-      lines: 0.01,
+      functions: 2.7,
+      lines: 2.04,
     },
   },
   testEnvironment: 'jsdom',
@@ -47,7 +54,6 @@ module.exports = {
   },
   coverageReporters: ['lcov', 'text-summary'],
   transformIgnorePatterns: [
-    '/node_modules/',
-    '^.+\\.module\\.(css|sass|scss)$',
+    '<rootDir>/(.next|.vercel|coverage|node_modules|playwright)/',
   ],
 };

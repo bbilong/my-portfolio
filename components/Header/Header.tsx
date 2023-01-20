@@ -16,13 +16,13 @@ const Header = ({ socials }: Props) => {
         transition={{ duration: 1.5 }}
         className="flex flex-row items-center"
       >
-        {/* Social icons */}
         {socials.map(social => (
           <SocialIcon
             key={social._id}
             url={social.url}
             fgColor="gray"
             bgColor="transparent"
+            target="_blank"
           />
         ))}
       </motion.div>
