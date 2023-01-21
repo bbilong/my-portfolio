@@ -8,19 +8,19 @@ exports[`Home should render heading 1`] = `
       style="opacity: 0;"
     >
       <div
-        class="rounded-full border border-[#333333] h-[200px] w-[200px] mt-52 absolute animate-ping"
+        class="rounded-full border border-[#333333] h-[100px] w-[100px]  md:h-[200px] md:w-[200px] mt-52 absolute animate-ping"
       />
       <div
-        class="rounded-full border border-[#333333] h-[300px] w-[300px] mt-52 absolute"
+        class="rounded-full border border-[#333333] h-[200px] w-[200px]  md:h-[300px] md:w-[300px] mt-52 absolute"
       />
       <div
-        class="rounded-full border border-[#333333] h-[500px] w-[500px] mt-52 absolute"
+        class="rounded-full border border-[#333333] h-[250px] w-[250px]  md:h-[500px] md:w-[500px] mt-52 absolute"
       />
       <div
-        class="rounded-full border border-[#F7AB0A] h-[650px] w-[650px] mt-52 absolute animate-pulse opacity-20"
+        class="rounded-full border border-[#F7AB0A] h-[300px] w-[300px]  md:h-[650px] md:w-[650px] mt-52 absolute animate-pulse opacity-20"
       />
       <div
-        class="rounded-full border border-[#333333] h-[800px] w-[800px] mt-52 absolute"
+        class="rounded-full border border-[#333333] h-[350px] w-[350px]  md:h-[800px] md:w-[800px] mt-52 absolute"
       />
     </div>
   </div>

@@ -17,7 +17,7 @@ const ContactMe = ({ pageInfo }: Props) => {
   const { register, handleSubmit } = useForm<Inputs>();
   const { address, email, name, phoneNumber } = pageInfo;
   const onSubmit: SubmitHandler<Inputs> = formData => {
-    window.location.href = `mailto:beauclairbilong@gmail.com?subject${formData.subject}
+    window.location.href = `mailto:beauclair.bilong.pro@gmail.com?subject${formData.subject}
     &body=Hi, my name is ${formData.name}. ${formData.message} ${formData.email}`;
   };
 
