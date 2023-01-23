@@ -21,6 +21,7 @@ const Project = ({ index, project, projectLength }: Props) => {
         transition={{ duration: 1.2 }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true }}
+        className="h-24 w-32 md:h-80 md:w-96"
         src={urlFor(image).url()}
         alt={title}
       />
