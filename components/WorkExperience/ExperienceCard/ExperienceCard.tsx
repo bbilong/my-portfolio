@@ -22,7 +22,7 @@ const ExperienceCard = ({ experience }: Props) => {
   return (
     <article
       className="flex flex-col rounded-lg items-center space-y-4 md:space-y-7 flex-shrink-0
-    w-[300px] md:w-[600px] xl:w-[800px] snap-center bg-[#292929] p-10 opacity-40 hover:opacity-100
+    w-[300px] h-[500px] md:w-[600px] xl:w-[800px] snap-center bg-[#292929] p-10 opacity-40 hover:opacity-100
     cursor-pointer transition-opacity duration-200 overflow-hidden"
     >
       <motion.img
@@ -38,7 +38,7 @@ const ExperienceCard = ({ experience }: Props) => {
       <div className="px-0 md:px-10">
         <h4 className="text-lg md:text-4xl font-light">{jobTitle}</h4>
         <p className="font-bold text-xs md:text-2xl mt-1">{company}</p>
-        <div className="grid grid-cols-8 md:flex md:space-x-2 my-2">
+        <div className="grid grid-cols-8 xl:flex md:space-x-2 my-2">
           {technologies.map(technology => (
             <img
               key={technology._id}
@@ -56,7 +56,7 @@ const ExperienceCard = ({ experience }: Props) => {
         </p>
 
         <ul
-          className="list-disc sm:my-5 space-y-4 text-xs md:text-lg max-h-96 p-5 overflow-y-scroll
+          className="list-disc sm:my-5 space-y-4 text-xs md:text-lg max-h-64 md:max-h-96 p-5 overflow-y-scroll
         scrollbar scrollbar-thin scrollbar-thumb-[#F7AB0A]/80 scrollbar-track-black"
         >
           {points.map(point => (
